@@ -11,4 +11,4 @@ jobs:
       - name: Generate xcode test report
         run: xcodebuild clean test -scheme SwiftDataStructure-Package -destination platform="macOS" -enableCodeCoverage YES  -derivedDataPath ./derivedData
       - name: Generate coverage report
-        run: bash <(curl -s https://codecov.io/bash) -J '^SwiftDataStructure$' -D ./derivedData -t 82c6532f-8a30-4012-900b-0fcbeac2661e -c -X gcov
+        run: bash <(curl -s https://codecov.io/bash) -J '^SwiftDataStructure$' -D ./derivedData -c -X gcov

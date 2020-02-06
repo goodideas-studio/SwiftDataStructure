@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Generate xcode project
-        run: swift package generate-xcodeproj --enableCodeCoverage
+        run: swift package generate-xcodeproj --enable-code-coverage
       - name: Generate xcode test report
         run: xcodebuild -scheme SwiftDataStructure-Package clean test
       - name: Generate coverage report

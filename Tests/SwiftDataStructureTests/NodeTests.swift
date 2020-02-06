@@ -16,5 +16,10 @@ class NodeTests: XCTestCase {
 		XCTAssertEqual(node.value, value)
 		XCTAssertEqual(node.next, nextNode)
 	}
-
+	func testNodeEqual() {
+		let value = 1
+		let node1 = Node(value: value)
+		let node2 = node1
+		XCTAssertTrue(node1 === node2)
+	}
 }
